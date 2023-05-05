@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.displayprp {
+    display: none !important;
+}
+
+h2{
+    color: #333333;
+    text-decoration: underline solid #333333;
+}
+
+hr {
+    height: 1px;
+    background-color: #3333;
+    border: none;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: black;
+    padding: 5px 60px;
+}
+
+.top-nav {
+    border: #B1A592 1px solid;
+    border-radius: 50px;
+    color: #B1A592;
+    display: flex;
+    padding: 3px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.nav-items {
+    display: inline-block;
+    margin-right: 3px;
+}
+
+.nav-item-border {
+    border: #B1A592 1px solid;
+    padding: 15px 55px;
+    border-radius: 50px;
+}
+
+.contact {
+    display: inline-block;
+}
+
+
+.side {
+    flex: 4;
+}
+
+.titlediv {
+    text-align: center;
+    background-color: #323025;
+    padding: 15px 150px;
+    border-radius: 50px;
+    border: none;
+}
+
+
+
+
+
+.content {
+    display: flex;
+}
+
+
+.grid-item1 {
+    background-color: #DFD6C5;
+    flex: 1;
+    border-radius: 30px;
+    text-align: left;
+    margin: 15px;
+}
+
+.grid-item2 {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.df {
+    display: flex;
+}
+
+.grid-item3 {
+    flex: 1;
+    background-color: #916E58;
+    margin: 15px;
+    border-radius: 30px;
+}
+
+.grid-item4 {
+    flex: 1;
+    background-color: #B1A48E;
+    border-radius: 30px;
+    margin: 15px;
+}
+
+
+
+.museum-detail {
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+    text-align: left;
+    border-radius: 30px;
+    justify-items: start;
+    gap: 25px;
+}
+
+.museum-img-cont {
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.museum-title {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+
+
+img {
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.grid-item1:hover img {
+    transform: scale(1.1);
+}
+
+
+
+.museum-img {
+    width: 500px;
+    height: 730px;
+
+}
+
+
+
+.museum-getStarted {
+    padding: 18px;
+}
+
+
+
+
+
+.breadlady {
+    background-color: #8E886D;
+    border-radius: 30px;
+
+}
+
+.breadlady-detail {
+    display: flex;
+    padding: 18px;
+    gap: 30px;
+}
+
+.breadlady-img {
+    width: 523px;
+    height: 235px;
+
+}
+
+
+.breadlady-detail-info>div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+
+.portrait-detail {
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+
+
+.portrait-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.portrait-header>img {
+    width: 113px;
+    height: 113px;
+}
+
+
+
+.portrait-header-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+
+
+.nav-item-border:hover {
+    background-color: #e0d6c2;
+    color: black;
+    transition: all 0.5s;
+}
+
+
+.breadlady-title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+
+.breadlady:hover img {
+    transform: scale(1.1);
+}
+
+.breadlady-detail-img {
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+
+.portrait-detail:hover img {
+    transform: scale(1.1);
+}
+
+
+
+
+.remove-overflow {
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.remove-overflow-potrait {
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+
+.portrait-detail-header{
+font-weight: 700;
+font-size: 32px;
+}
+
+
+
+
+
+
+
+
+@media all and (max-width:500px) {
+    body {
+        padding: 0;
+        margin: 0;
+
+    }
+
+    .displayprp {
+        display: block !important;
+    }
+
+    .side div:nth-of-type(2) {
+        display: none;
+    }
+
+    .side div:nth-of-type(3) {
+        display: none;
+    }
+
+    .side div:nth-of-type(4) {
+        display: none;
+    }
+
+    #contact {
+        display: none;
+    }
+
+    .nav-items {
+        margin: 0;
+    }
+
+    .top-nav {
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titlediv {
+        padding: 0;
+        text-align: center;
+    }
+
+    .content {
+        flex-direction: column;
+        width: 100vw;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 1px;
+    }
+
+    .grid-item1 {
+        flex-grow: 2;
+
+    }
+
+    .grid-item2 {
+        flex: 2;
+    }
+
+    .breadlady-detail {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .breadlady-img {
+        align-self: center;
+
+    }
+
+
+
+
+    .df {
+        flex-direction: column;
+    }
+
+    .grid-item3 {
+        flex: 1;
+
+    }
+
+    .portrait-header>img {
+        justify-content: center;
+    }
+
+    .grid-item4 {
+        flex: 1;
+
+    }
+}
